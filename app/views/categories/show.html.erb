@@ -3,8 +3,18 @@
 <p>
   <b>Name:</b>
   <%= @category.name %>
+    
+  <% if !@post.blank? %>
+    <h3>Posts:</h3>
+    <ul>
+    <% @post.each do |p| %>
+      <li>
+        <%= link_to p.title, p %>
+      </li>
+    <% end %>
+    </ul>
+  <% end %>
 </p>
 
 
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+<%= link_to 'Categories List', categories_path %>

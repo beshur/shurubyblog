@@ -4,5 +4,7 @@
 
 <article><%= @post.body %></article>
 
+<p class="category">Category: <%= link_to @post.category.name, @post.category %></p>
+
 <%= link_to "Go to Posts", posts_path %> | 
 <%= link_to "Delete this post", @post, :confirm => "Are you sure you want to delete the post?", :method => :delete %>

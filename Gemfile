@@ -6,6 +6,7 @@ gem 'rails', '3.2.22.5'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg', '~> 0.18'
+gem 'administrate'
 
 
 # Gems used only for assets and not required
