@@ -1,5 +1,8 @@
 <h2><%= @post.title %></h2>
 
-<small><%= @post.created_at.strftime("%b %d, %Y") %></small>
+<small><%= @post.created_at.strftime("%b %d, %Y") %> <%= link_to "Edit Post", edit_post_path %> </small>
 
 <article><%= @post.body %></article>
+
+<%= link_to "Go to Posts", posts_path %> | 
+<%= link_to "Delete this post", @post, :confirm => "Are you sure you want to delete the post?", :method => :delete %>

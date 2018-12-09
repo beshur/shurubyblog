@@ -11,3 +11,25 @@
  *= require_self
  *= require_tree .
  */
+html, body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+}
+
+hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 50px 0;
+}
+
+.container {
+  padding: 40px;
+  margin: 20px;
+}
+
+.flash-item {
+  padding: 10px;
+  font-style: italic;
+}

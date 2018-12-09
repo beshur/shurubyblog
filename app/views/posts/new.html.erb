@@ -1,1 +1,21 @@
 <h2>New post</h2>
+
+<%= form_for @post do |f| %>
+
+<div>
+<%= f.label :title %>
+<%= f.text_field :title %>
+</div>
+<div>
+<%= f.label :body %>
+<%= f.text_area :body %>
+</div>
+<div>
+<%= f.select :category_id, @category.collect {|cat| [cat.name, cat.id]}, {:include_blank => "Select One"} %>
+</div>
+
+<div>
+  <%= f.submit "Add post" %>
+</div>
+
+<% end %>

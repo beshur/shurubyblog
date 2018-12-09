@@ -1,10 +1,10 @@
 <h2>Posts</h2>
 
-<p>yo</p>
+<p><%= link_to "Create new post", new_post_path %></p>
 
 
 <% @posts.each do |post| %>
-  <h3><a href="<%= post.id %>"><%= post.title %></a></h3>
+  <h3><%= link_to post.title, post %></a></h3>
 
   <div><%= post.body %></div>
 
