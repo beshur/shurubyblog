@@ -1,4 +1,7 @@
 RubyBlog::Application.routes.draw do
+  resources :categories
+
+
   get "categories/index"
 
   get "categories/edit"
