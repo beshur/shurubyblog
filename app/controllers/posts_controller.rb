@@ -1,7 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @content_first = 'Sample paragraph'
-    @content_second = 'Another paragraph'
+    @posts = Post.all
   end
 
   def new
@@ -21,7 +20,7 @@ class PostsController < ApplicationController
   end
 
   def show
-
+    @post = Post.find(params[:id])
   end
 
   def destroy

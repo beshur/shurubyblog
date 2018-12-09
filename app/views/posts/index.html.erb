@@ -1,5 +1,14 @@
 <h2>Posts</h2>
 
-<p><%= @content_first %></p>
+<p>yo</p>
 
-<p><%= @content_second %></p>
+
+<% @posts.each do |post| %>
+  <h3><a href="<%= post.id %>"><%= post.title %></a></h3>
+
+  <div><%= post.body %></div>
+
+  <hr>
+
+<% end %>
+
