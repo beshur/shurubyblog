@@ -1,6 +1,9 @@
 <h2><%= @post.title %></h2>
 
-<small><%= @post.created_at.strftime("%b %d, %Y") %> <%= link_to "Edit Post", edit_post_path %> </small>
+<small><%= @post.created_at.strftime("%b %d, %Y") %></small>
+<% if @post.admin_user.present? %>
+  <small>by <%= @post.admin_user.name %></small>
+<% end %>
 
 <article><%= @post.body %></article>
 

@@ -7,4 +7,5 @@ class ApplicationController < ActionController::Base
     @search = Post.search(params[:search])
     @search_posts = @search.order("id desc").limit(15)
   end
+
 end
