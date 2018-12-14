@@ -4,7 +4,10 @@
   <h3><%= link_to post.title, post %></a></h3>
 
   <div><%= post.body %></div>
-
+    
+  <% if post.admin_user.present? %>
+    <small>by <%= post.admin_user.name %></small>
+  <% end %>
   <hr>
 
 <% end %>
