@@ -173,6 +173,7 @@ DEPENDENCIES
   activesupport!
   coffee-rails (~> 3.2.1)
   jquery-rails (~> 2.0.0)
+  meta_search
   pg (~> 0.18)
   rails (= 3.2.22.5)
   sass-rails (~> 3.2.3)

@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.order("id desc").limit(15)
+    @posts = site_search
   end
 
   def new

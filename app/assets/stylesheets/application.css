@@ -41,3 +41,8 @@ nav {
 nav > a {
   margin-right: 4px;
 }
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+}
