@@ -6,6 +6,8 @@ gem 'rails', '3.2.22.5'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'activesupport', :git => 'git://github.com/beshur/activesupport.git'
+
 gem 'pg', '~> 0.18'
 gem 'activeadmin', '0.6.6'
 
