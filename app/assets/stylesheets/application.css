@@ -33,3 +33,11 @@ hr {
   padding: 10px;
   font-style: italic;
 }
+
+nav {
+  padding: 20px 0;
+}
+
+nav > a {
+  margin-right: 4px;
+}

@@ -10,6 +10,15 @@
 <body>
 
 <div class="container">
+  <nav>
+    <span>></span>
+    <%= link_to "Home", root_path %>
+    <%= link_to "Posts", posts_path %>
+    <%= link_to "Categories", categories_path %>
+    <%= link_to "About", about_path %>
+    <%= link_to "Resources", :controller => :pages, :action => :resources %>
+    <%= link_to "Contact", :controller => :pages, :action => :contact %>
+  </nav>
   <div class="flash">
     <% flash.each do |key, value| %>
       <div class="flash-item"><%= value %></div>

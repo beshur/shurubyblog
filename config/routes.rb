@@ -1,4 +1,10 @@
 RubyBlog::Application.routes.draw do
+  get "pages/about"
+
+  get "pages/contact"
+
+  get "pages/resources"
+
   resources :categories
 
 
@@ -14,6 +20,9 @@ RubyBlog::Application.routes.draw do
 
     resources :posts
     resources :categories
+    match '/about', :to => 'pages#about'
+    match '/resources', :to => 'pages#resources'
+    match '/contact', :to => 'pages#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
