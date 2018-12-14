@@ -1,4 +1,7 @@
 RubyBlog::Application.routes.draw do
+  resources :comments
+
+
   get "pages/about"
 
   get "pages/contact"
